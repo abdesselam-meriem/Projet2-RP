@@ -24,47 +24,6 @@ We implement a genetic algorithm with the following components:
 - Generational replacement with elitism
 - Fitness-based survival of the fittest
 
-Expected Output
-The program will:
-
-Display the evolution process generation by generation
-
-Show the best solution found with fitness score
-
-Visualize the knight's tour path on the chessboard
-
-Terminate when a perfect solution (fitness = 64) is found
-
-🧪 Key Features
-Move Validation: Automatically corrects illegal moves
-
-Fitness Evaluation: Scores solutions based on unique squares visited
-
-Tournament Selection: Selects best parents for reproduction
-
-Visualization: Displays the final solution graphically
-
-⚙️ Parameters
-Population size: 50 individuals
-
-Tournament size: 3 individuals
-
-Chromosome length: 63 moves
-
-Maximum fitness: 64 (perfect tour)
-
-📈 Results
-The genetic algorithm evolves populations over generations, gradually improving the knight's path until it finds a complete tour visiting all 64 squares.
-
-👨‍💻 Author
-[Your Name]
-Master 1, Visual Computing
-USTHB University
-2025/2026
-
-📄 License
-This project is for educational purposes as part of the Visual Computing curriculum.
-
 ## How to Run
 ```bash
 python knight-chess.py
