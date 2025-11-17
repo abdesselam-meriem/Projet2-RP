@@ -412,11 +412,6 @@ def main_menu():
                     if (i + j) % 80 == 0:
                         pygame.draw.rect(screen, (40, 40, 80), (i, j, 20, 20))
         
-        # Draw decorative chess pieces
-        for piece in chess_pieces:
-            pygame.draw.circle(screen, piece['color'], piece['pos'], piece['size'])
-            pygame.draw.circle(screen, BLACK, piece['pos'], piece['size'], 2)
-        
         # Draw title with rotation effect
         title_text = title_font.render("KNIGHT'S TOUR", True, GOLD)
         
@@ -432,7 +427,7 @@ def main_menu():
         screen.blit(rotated_title, title_rect)
         
         # Draw subtitle
-        subtitle_text = info_font.render("Genetic Algorithm Solution", True, LIGHT_BLUE)
+        subtitle_text = info_font.render("Genetic Algorithm Solution", True, GOLD)
         subtitle_rect = subtitle_text.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 3 + 60))
         screen.blit(subtitle_text, subtitle_rect)
         
